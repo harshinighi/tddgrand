@@ -17,7 +17,7 @@ public void test()
 @BeforeTest
 public void beforeTest()
 {
-	System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
+	System.setProperty("webdriver.gecko.driver", "//usr//local//bin//geckodriver");
 	File pathBinary = new File("/usr/bin/firefox");
 	System.setProperty("webdriver.firefox.bin", pathBinary.getAbsolutePath());
 	//System.setProperty("webdriver.gecko.driver", "E:\\SHARED\\geckodriver\\geckodriver.exe");
