@@ -17,10 +17,14 @@ public void test()
 @BeforeTest
 public void beforeTest()
 {
+	
+	File pathBinary = new File("/usr/bin/firefox");
+	FirefoxBinary ffBinary = new FirefoxBinary(pathBinary);
+	FirefoxProfile firefoxProfile = new FirefoxProfile();
 	System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
 	//System.setProperty("webdriver.gecko.driver", "E:\\SHARED\\geckodriver\\geckodriver.exe");
-	System.out.println("helllooo");
-	driver= new FirefoxDriver();
+	//System.out.println("helllooo");
+	driver= new FirefoxDriver(ffBinary,firefoxProfile);
 	driver.get("http://13.251.143.66:8090/IPL-Fantasy-League/");
 
 }
