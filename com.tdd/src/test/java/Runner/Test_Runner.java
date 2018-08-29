@@ -17,7 +17,7 @@ public void test()
 @BeforeTest
 public void beforeTest()
 {
-	System.setProperty("webdriver.gecko.driver", "http:\\13.251.143.66:4444");
+	System.setProperty("webdriver.gecko.driver", "\root\geckodriver");
 	//System.setProperty("webdriver.gecko.driver", "E:\\SHARED\\geckodriver\\geckodriver.exe");
 	System.out.println("helllooo");
 	driver= new FirefoxDriver();
